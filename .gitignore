@@ -1,0 +1,20 @@
+# Ignore virtual environment directories
+my_django_env/
+
+# Ignore compiled Python files
+*.pyc
+#Ignore common .md files
+personal_notes.md
+
+#Ignore other developement files.
+assignement_api/assigne_app/views_22092023.py
+assignement_api/assigne_app/views_finalcopy.py
+assignement_api/assigne_app/views_latest_codes.py
+assignement_api/assigne_app/views_tested.py
+assignement_api/assigne_app/sample.json
+assignement_api/assigne_app/views - Copy.py
+
+#Ignore Logs
+assignement_api/logs/*.log
+# Ignore database files
+db.sqlite3 
