@@ -8,6 +8,7 @@ Download Repository assignement_api_py.
     	3. Install requirements using requirements.txt file
 
 After successful installations of requirements.
+
 	Create "logs" folder under main sub "assignement_api" folder having "assigne_app" and "assignement_api" as below
 
 Folders structure
