@@ -1,10 +1,11 @@
 # assignement_api_py
 
-Download Repository assignement_api_py
+Download Repository assignement_api_py.
+
     Inside it setup the python virtual environement using command prompt
-    1. Create venv command: python3 -m venv my_django_env
-    2. Activate venv: my_django_env\Scripts\activate
-    3. Install requirements using requirements.txt file
+    	1. Create venv command: python3 -m venv my_django_env
+    	2. Activate venv: my_django_env\Scripts\activate
+    	3. Install requirements using requirements.txt file
 
 After successful installations of requirements.
 	Create "logs" folder under main sub "assignement_api" folder having "assigne_app" and "assignement_api" as below
