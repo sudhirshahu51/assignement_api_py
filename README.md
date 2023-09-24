@@ -10,7 +10,8 @@
 	Create "logs" folder under main sub "assignement_api" folder having "assigne_app" and "assignement_api" as below
 
 Folders structure
-'''|--assignement_api_py
+'''bash
+|--assignement_api_py
 	|--assignement_api
 		|-- assignement_api
 		|-- assigne_app
@@ -18,7 +19,8 @@ Folders structure
 		|-- manage.py
 		|....
 	|--my_django_env
-	|...'''
+	|...
+'''
 
 	Run below commands on command prompt after changing directory to "assignement_api" having manage.py file.
 	1. python manage.py makemigrations
@@ -27,7 +29,9 @@ Folders structure
 		#resolve issue if any.
 	3. python manage.py runserver
 
-#After Server Hosting
+
+After Server Hosting.
+	
 	After hosting server use below commands to authenticate and check end points results. For any error and information check log files.
 	1. Check successful server hosting, using browser at http://127.0.0.1:8000/data/ having message "End point is Ok".
 	
