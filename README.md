@@ -13,17 +13,18 @@ After successful installations of requirements.
 
 Folders structure
 
-'''
-|_assignement_api_py
-	|_assignement_api
-		|_ assignement_api
-		|_ assigne_app
-		|_ logs
-		|_ manage.py
-		|....
-	|_my_django_env
-	|...
-'''
+```
+|──assignement_api_py/
+|	|──assignement_api/
+|	|	|── assignement_api/
+|	|	|──assigne_app/
+|	|	|──logs/
+|	|	|──manage.py
+|	|	|....
+|	|──my_django_env/
+|──requirements.txt
+
+```
 
 	Run below commands on command prompt after changing directory to "assignement_api" having manage.py file
 	1. python manage.py makemigrations
