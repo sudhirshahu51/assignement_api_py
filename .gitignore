@@ -12,7 +12,7 @@ assignement_api/assigne_app/views_finalcopy.py
 assignement_api/assigne_app/views_latest_codes.py
 assignement_api/assigne_app/views_tested.py
 assignement_api/assigne_app/sample.json
-assignement_api/assigne_app/views - Copy.py
+assignement_api/assigne_app/views_copy.py
 
 #Ignore Logs
 assignement_api/logs/*.log
