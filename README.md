@@ -5,7 +5,8 @@ Download Repository assignement_api_py.
     Inside it setup the python virtual environement using command prompt
     	1. Create venv command: python3 -m venv my_django_env
     	2. Activate venv: my_django_env\Scripts\activate
-    	3. Install requirements using requirements.txt file
+    	3. Install requirements using requirements.txt: pip install -r requirements.txt
+
 
 After successful installations of requirements.
 
@@ -22,11 +23,11 @@ Folders structure
 |	|	|──manage.py
 |	|	|....
 |	|──my_django_env/
-|   ...
-|──requirements.txt
+|   |──.gitignore
+|   |──ReadMe.md
+|───|──requirements.txt
 
-```
-
+``
 	Run below commands on command prompt after changing directory to "assignement_api" having manage.py file
 	1. python manage.py makemigrations
 		#Resolve any issue if occurs and can take help from logs created.
@@ -40,18 +41,18 @@ After Server Hosting.
 	After hosting server use below commands to authenticate and check end points results. For any error and information check log files.
 	1. Check successful server hosting, using browser at http://127.0.0.1:8000/data/ having message "End point is Ok".
 	
-	2.  Authenticate using curl command:  curl -X POST -d "username=123&password=12345" http://127.0.0.1:8000/data/auth/
+	2.  Authenticate using curl command in separate command prompt:  curl -X POST -d "username=123&password=12345" http://127.0.0.1:8000/data/auth/
 		use generated token for further use of end points(sample response {"token":"f02fe13f0bcd7e86c453bd18dc6ebeff68bcadb5"})
 
 	3. For step 3 task of specific country details as mentioned is assignement.
 		curl commands to check end point for country 'name' and {"token":"YOUR_AUTH_TOKEN"})
-		curl -X POST "http://127.0.0.1:8000/data/country/name/ " -H "Authorization: Token YOUR_AUTH_TOKEN"
+		curl -X GET "http://127.0.0.1:8000/data/country/name/ " -H "Authorization: Token YOUR_AUTH_TOKEN"
 
 		Samples:
 		Curl commands for "India".
-			curl -X POST "http://127.0.0.1:8000/data/country/India/" -H "Authorization: Token f02fe13f0bcd7e86c453bd18dc6ebeff68bcadb5" 
+			curl -X GET "http://127.0.0.1:8000/data/country/India/" -H "Authorization: Token f02fe13f0bcd7e86c453bd18dc6ebeff68bcadb5" 
 		Curl commands for "United States"(Replace spaces with "%20").
-			curl -X POST "http://127.0.0.1:8000/data/country/United%20States/" -H "Authorization: Token f02fe13f0bcd7e86c453bd18dc6ebeff68bcadb5"
+			curl -X GET "http://127.0.0.1:8000/data/country/United%20States/" -H "Authorization: Token f02fe13f0bcd7e86c453bd18dc6ebeff68bcadb5"
 
 	4.  For step 4 task(Retrieve a list of all countries' names based on filters (population/area/language) and sorting(asc/desc). It should have support for pagination.)
 		Parameters options to pass
