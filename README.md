@@ -22,6 +22,7 @@ Folders structure
 |	|	|──manage.py
 |	|	|....
 |	|──my_django_env/
+|   ...
 |──requirements.txt
 
 ```
